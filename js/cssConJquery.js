@@ -493,10 +493,10 @@ $('.carta').css({
     backgroundColor: "#EBA272",
     backgroundImage: "url('media/video/braum.gif')",
     backgroundPosition: "center center",
-    backgroundSize: "250px 250px",
+    backgroundSize: "228px 228xpx",
     borderRadius: "10px",
-    height: "200px",
-    width: "270px",
+    height: "165px",
+    width: "250px",
     margin: "15px",
     cursor: "pointer"
 });
@@ -926,18 +926,18 @@ function pantalla500(e){
     if (e.matches){
         //Juego de la Memoria
         $('.carta').css({
-            height: "40px",
-            width: "60px",
+            height: "45px",
+            width: "73px",
             margin: "2px",
-            backgroundSize: "58px 58px",
+            backgroundSize: "67px 67px",
         });
     }else{
         //Juego de la Memoria
         $('.carta').css({
-            height: "200px",
-            width: "270px",
+            height: "165px",
+            width: "250px",
             margin: "15px",
-            backgroundSize: "250px 250px",
+            backgroundSize: "228px 228px",
         });
     };
 };
