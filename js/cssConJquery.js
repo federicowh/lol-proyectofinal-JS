@@ -1,5 +1,6 @@
-// Dando estilos con selectores JQUERY:
-// Generales
+//Dando estilos con selectores JQUERY:
+
+//Generales
 $('*').css({
     padding: "0",
     margin: "0",
@@ -11,8 +12,9 @@ $('body').css({
     fontFamily: "Libre Franklin, sans-serif"
 });
 
-// Encabezado
-// Redes
+//Encabezado: 
+
+//Redes
 $('#encabezado').css({
     display: "flex",
     flexFlow: "row wrap",
@@ -146,8 +148,9 @@ $('#bienvenida-titulo').css({
     fontStyle: "italic",
 });
 
-//Roles
-//Botones para elegir entre BUSCAR POR ROLES/BUSCADOR DE CAMPEONES/VER MAPA
+//Buscar por Roles - por nombre:
+
+//Botones para elegir entre BUSCAR POR ROLES/BUSCAR POR NOMBRE/MEMOLOL
 $('.elegir').css({
     display: "flex",
     justifyContent: "center",
@@ -185,7 +188,7 @@ function(){
     });
 });
 
-//Roles
+//Buscar por Roles
 $('#seleccionaRol').css({
     display: "flex",
     justifyContent: "center",
@@ -258,7 +261,7 @@ $('#mostrarRoles').css({
     userSelect: "none",
 });
 
-//Buscador con filtro y todos los Campeones
+//Buscar por nombre
 $('#buscador').css({
     display: "flex",
     flexFlow: "column wrap",
@@ -311,6 +314,190 @@ $('#mostrarCampeones').css({
     userSelect: "none",
     transition: "all 0.8s",
     backgroundColor: "#bfbfbfbf"
+});
+
+//Juego de la Memoria
+$('.juego-contenedor').css({
+    display: "flex",
+    flexFlow: "column wrap",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    backgroundColor: "white",
+    width: "90%",
+    margin: "auto auto 30px auto",
+    boxShadow: "0 0 20px rgba(0, 0, 0, 0.55)",
+    userSelect: "none"
+});
+
+$('#juego-titulo').css({
+    width: "100%",
+    padding: "20px",
+    fontSize: "85px",
+    fontStyle: "italic",
+    backgroundColor: "#000",
+    color: "white"
+});
+
+$('ul').css({
+    listStyle: "none",
+});
+
+$('li').css({
+    listStyle: "none",
+});
+
+$('.btn').css({
+    borderRadius: "10px",
+    border: "none",
+    color: "white",
+    boxShadow: "5px 2px 20px 0 rgba(46, 61, 73, 0.5)",
+    padding: "15px",
+    margin: "15px"
+});
+
+$('.juego-puntuacion').css({
+    color: "#000",
+    fontSize: "20px",
+    fontStyle: "italic",
+    fontWeight: "bold",
+    padding: "10px",
+    marginBottom: "20px",
+    width: "100%"
+});
+
+$('.estrella-puntuacion > li').css({
+    display: "inline-block",
+    padding: "5px",
+    margin: "10px 0px 10px 0px",
+    color: "#EBA272"
+});
+
+$('.reiniciar-btn').css({
+    fontSize: "16px",
+    background: "black",
+    cursor: "pointer"
+});
+$('.reiniciar-btn').hover(function(){
+    $(this).css({backgroundColor: "#EBA272", transition: "all 0.5s"});
+},
+function(){
+    $(this).css({backgroundColor: "#000", transition: "all 0.5s"});
+});
+
+$('.contenedor-tiempo').css({
+    margin: "20px 0px 10px 0px"
+});
+
+$('.timer').css({
+    fontSize: "20px",
+    fontWeight: "bold"
+});
+
+//Modal cuando ganas el juego
+$('.modal').css({
+    display: "none",
+    position: "fixed",
+    left: "0",
+    top: "0",
+    width: "100%",
+    height: "100%",
+    backgroundColor: "rgba(46, 61, 73, 0.6)",
+    userSelect: "none"
+});
+
+$('.modal-contentido').css({
+    display: "flex",
+    flexFlow: "column wrap",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "white",
+    color: "black",
+    margin: "5% auto",
+    border: "6px solid #EBA272",
+    width: "75%"
+});
+
+$('.modal-contentido h2').css({
+    display: "flex",
+    flexFlow: "row wrap",
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: "45px",
+    fontStyle: "italic",
+    margin: "0px 15px 20px 15px"
+});
+
+$('.modal-contentido i').css({
+    color: "#EBA272",
+    marginLeft: "10px"
+});
+
+$('.modal-contentido p').css({
+    fontStyle: "italic",
+    fontWeight: "bold"
+});
+
+$('.modal-cerrar').css({
+    margin: "5px 20px 0px 0px",
+    alignSelf: "flex-end",
+    fontSize: "60px",
+    color: "#000",
+    cursor: "pointer"
+});
+
+$('.modal-cerrar').hover(function(){
+    $(this).css({color: "#EBA272", transition: "all 0.5s"});
+},
+function(){
+    $(this).css({color: "#000", transition: "all 0.5s"});
+});
+
+$('.jugar-denuevo-btn').css({
+    backgroundColor: "#000",
+    margin: "30px 0px 30px 0px",
+    cursor: "pointer"
+});
+$('.jugar-denuevo-btn').hover(function(){
+    $(this).css({backgroundColor: "#EBA272", transition: "all 0.5s"});
+},
+function(){
+    $(this).css({backgroundColor: "#000", transition: "all 0.5s"});
+});
+
+//Juego de la memoria (.mazo / .carta / .carta img)
+$('.mazo').css({
+    background: "linear-gradient(357deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%)",
+    border: "4px solid #EBA272",
+    borderRadius: "10px",
+    display: "flex",
+    flexFlow: "row wrap",
+    justifyContent: "space-around",
+    alignItems: "center",
+    width: "80%",
+    height: "100%",
+    marginBottom: "30px",
+    padding: "15px",
+});
+
+$('.carta').css({
+    backgroundColor: "#EBA272",
+    backgroundImage: "url('media/video/braum.gif')",
+    backgroundPosition: "center center",
+    backgroundSize: "250px 250px",
+    borderRadius: "10px",
+    height: "200px",
+    width: "270px",
+    margin: "15px",
+    cursor: "pointer"
+});
+
+$('.carta img').css({
+    borderRadius: "10px",
+    width: "100%",
+    height: "100%",
+    cursor: "pointer",
+    userSelect: "none"
 });
 
 //Mapa
@@ -599,188 +786,4 @@ $('.pie-sponsors i').hover(function(){
 },
 function(){
     $(this).css('transform', 'scale(1,1)');
-});
-
-//Juego de la Memoria
-$('.juego-contenedor').css({
-    display: "flex",
-    flexFlow: "column wrap",
-    justifyContent: "center",
-    alignItems: "center",
-    textAlign: "center",
-    backgroundColor: "white",
-    width: "90%",
-    margin: "auto auto 30px auto",
-    boxShadow: "0 0 20px rgba(0, 0, 0, 0.55)",
-    userSelect: "none"
-});
-
-$('#juego-titulo').css({
-    width: "100%",
-    padding: "20px",
-    fontSize: "85px",
-    fontStyle: "italic",
-    backgroundColor: "#000",
-    color: "white"
-});
-
-$('ul').css({
-    listStyle: "none",
-});
-
-$('li').css({
-    listStyle: "none",
-});
-
-$('.btn').css({
-    borderRadius: "10px",
-    border: "none",
-    color: "white",
-    boxShadow: "5px 2px 20px 0 rgba(46, 61, 73, 0.5)",
-    padding: "15px",
-    margin: "15px"
-});
-
-$('.juego-puntuacion').css({
-    color: "#000",
-    fontSize: "20px",
-    fontStyle: "italic",
-    fontWeight: "bold",
-    padding: "10px",
-    marginBottom: "20px",
-    width: "100%"
-});
-
-$('.estrella-puntuacion > li').css({
-    display: "inline-block",
-    padding: "5px",
-    margin: "10px 0px 10px 0px",
-    color: "#EBA272"
-});
-
-$('.reiniciar-btn').css({
-    fontSize: "16px",
-    background: "black",
-    cursor: "pointer"
-});
-$('.reiniciar-btn').hover(function(){
-    $(this).css({backgroundColor: "#EBA272", transition: "all 0.5s"});
-},
-function(){
-    $(this).css({backgroundColor: "#000", transition: "all 0.5s"});
-});
-
-$('.contenedor-tiempo').css({
-    margin: "20px 0px 10px 0px"
-});
-
-$('.timer').css({
-    fontSize: "20px",
-    fontWeight: "bold"
-});
-
-//Modal cuando ganas el juego
-$('.modal').css({
-    display: "none",
-    position: "fixed",
-    left: "0",
-    top: "0",
-    width: "100%",
-    height: "100%",
-    backgroundColor: "rgba(46, 61, 73, 0.6)",
-    userSelect: "none"
-});
-
-$('.modal-contentido').css({
-    display: "flex",
-    flexFlow: "column wrap",
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "white",
-    color: "black",
-    margin: "5% auto",
-    border: "6px solid #EBA272",
-    width: "75%"
-});
-
-$('.modal-contentido h2').css({
-    display: "flex",
-    flexFlow: "row wrap",
-    justifyContent: "center",
-    alignItems: "center",
-    fontSize: "45px",
-    fontStyle: "italic",
-    margin: "0px 15px 20px 15px"
-});
-
-$('.modal-contentido i').css({
-    color: "#EBA272",
-    marginLeft: "10px"
-});
-
-$('.modal-contentido p').css({
-    fontStyle: "italic",
-    fontWeight: "bold"
-});
-
-$('.modal-cerrar').css({
-    margin: "5px 20px 0px 0px",
-    alignSelf: "flex-end",
-    fontSize: "60px",
-    color: "#000",
-    cursor: "pointer"
-});
-
-$('.modal-cerrar').hover(function(){
-    $(this).css({color: "#EBA272", transition: "all 0.5s"});
-},
-function(){
-    $(this).css({color: "#000", transition: "all 0.5s"});
-});
-
-$('.jugar-denuevo-btn').css({
-    backgroundColor: "#000",
-    margin: "30px 0px 30px 0px",
-    cursor: "pointer"
-});
-$('.jugar-denuevo-btn').hover(function(){
-    $(this).css({backgroundColor: "#EBA272", transition: "all 0.5s"});
-},
-function(){
-    $(this).css({backgroundColor: "#000", transition: "all 0.5s"});
-});
-
-//Juego de la memoria (.mazo / .carta / .carta img)
-$('.mazo').css({
-    background: "linear-gradient(357deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%)",
-    border: "4px solid #EBA272",
-    borderRadius: "10px",
-    display: "flex",
-    flexFlow: "row wrap",
-    justifyContent: "space-around",
-    alignItems: "center",
-    width: "80%",
-    height: "100%",
-    marginBottom: "30px",
-    padding: "15px",
-});
-
-$('.carta').css({
-    backgroundColor: "#EBA272",
-    backgroundImage: "url('media/video/braum.gif')",
-    backgroundPosition: "center center",
-    backgroundSize: "250px 250px",
-    borderRadius: "10px",
-    height: "200px",
-    width: "270px",
-    margin: "15px",
-    cursor: "pointer"
-});
-
-$('.carta img').css({
-    borderRadius: "10px",
-    width: "100%",
-    height: "100%",
-    cursor: "pointer",
-    userSelect: "none"
 });
