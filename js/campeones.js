@@ -49,7 +49,7 @@ $('document').ready(function(){
         //MediaQueries
         const mediaQueries600 = window.matchMedia("(max-width: 600px)");
 
-        function handleTabletChange(e){
+        function pantalla600(e){
         if (e.matches){
             $('.campeonesEnImagenes img').css({
             width: "380px",
@@ -71,9 +71,9 @@ $('document').ready(function(){
         };
         }; 
 
-        mediaQueries600.addListener(handleTabletChange);
+        mediaQueries600.addListener(pantalla600);
 
-        handleTabletChange(mediaQueries600);
+        pantalla600(mediaQueries600);
 
         $('#mostrarCampeones').hide();
     });
