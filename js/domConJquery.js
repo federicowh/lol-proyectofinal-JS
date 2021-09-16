@@ -35,7 +35,7 @@ $('#bienvenida').prepend(`
 
     <div class="elegir">
         <button id="mostrarRolesClick">BUSCAR POR ROLES</button>
-        <button id="mostrarCampeonesClick">BUSCADOR DE CAMPEONES</button>
+        <button id="mostrarCampeonesClick">BUSCAR POR NOMBRES</button>
         <button id="mostrarMemoClick">MEMOLOL</button>
     </div>
 
