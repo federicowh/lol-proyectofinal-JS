@@ -52,12 +52,12 @@ $('document').ready(function(){
         function pantalla600(e){
         if (e.matches){
             $('.campeonesEnImagenes img').css({
-            width: "380px",
+            width: "350px",
             height: "220px",
             })
 
             $('.campeonesEnImagenes h5').css({
-            width: "380px",
+            width: "350px",
             })
         }else{
             $('.campeonesEnImagenes img').css({
