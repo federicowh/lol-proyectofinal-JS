@@ -154,51 +154,39 @@ function reiniciarTodo() {
   const mediaQueries768 = window.matchMedia("(max-width: 768px)");
   const mediaQueries500 = window.matchMedia("(max-width: 500px)");
 
-  function handleTabletChange(e){
+  function pantalla768(e){
       if (e.matches){
           //Juego de la Memoria
           $('#juego-titulo').css({
               fontSize: "40px"
-          });
-  
-          $('.carta').css({
-              height: "80px",
-              width: "100px",
-              backgroundSize: "100px 100px",
           });
       }else{
           //Juego de la Memoria
           $('#juego-titulo').css({
               fontSize: "85px"
           });
-  
-          $('.carta').css({
-              height: "200px",
-              width: "270px",
-              backgroundSize: "250px 250px",
-          });
       };
   };
   
-  mediaQueries768.addListener(handleTabletChange);
-  handleTabletChange(mediaQueries768);
+  mediaQueries768.addListener(pantalla768);
+  pantalla768(mediaQueries768);
 
   function pantalla500(e){
     if (e.matches){
         //Juego de la Memoria
         $('.carta').css({
             height: "40px",
-            width: "60px",
+            width: "55px",
             margin: "2px",
             backgroundSize: "58px 58px",
         });
     }else{
         //Juego de la Memoria
         $('.carta').css({
-            height: "80px",
-            width: "100px",
-            margin: "15px",
-            backgroundSize: "100px 100px",
+          height: "200px",
+          width: "270px",
+          margin: "15px",
+          backgroundSize: "250px 250px",
         });
     };
   };
@@ -298,6 +286,7 @@ function puntuacionActualizadaModal() {
 
   //CSS:
   $('p.valoracion').css({
+    textAlign: "center",
     fontWeight: "600",
     fontStyle: "italic",
   });

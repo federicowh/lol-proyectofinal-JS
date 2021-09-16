@@ -431,7 +431,7 @@ $('.modal-contentido h2').css({
     flexFlow: "row wrap",
     justifyContent: "center",
     alignItems: "center",
-    fontSize: "45px",
+    fontSize: "40px",
     fontStyle: "italic",
     margin: "0px 15px 20px 15px"
 });
@@ -442,6 +442,7 @@ $('.modal-contentido i').css({
 });
 
 $('.modal-contentido p').css({
+    textAlign: "center",
     fontStyle: "italic",
     fontWeight: "bold"
 });
@@ -827,12 +828,6 @@ function pantalla768(e){
             fontSize: "40px"
         });
 
-        $('.carta').css({
-            height: "80px",
-            width: "100px",
-            backgroundSize: "100px 100px",
-        });
-
         //Modos de Juego:
         $('#modos-contenedor-video p').css({
             fontSize: "12.5px"
@@ -887,12 +882,6 @@ function pantalla768(e){
             fontSize: "85px"
         });
 
-        $('.carta').css({
-            height: "200px",
-            width: "270px",
-            backgroundSize: "250px 250px",
-        });
-
         //Modos de Juego:
         $('#modos-contenedor-video p').css({
             fontSize: "16px",
@@ -945,10 +934,10 @@ function pantalla500(e){
     }else{
         //Juego de la Memoria
         $('.carta').css({
-            height: "80px",
-            width: "100px",
+            height: "200px",
+            width: "270px",
             margin: "15px",
-            backgroundSize: "100px 100px",
+            backgroundSize: "250px 250px",
         });
     };
 };
