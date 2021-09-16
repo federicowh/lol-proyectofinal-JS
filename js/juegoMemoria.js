@@ -1,5 +1,5 @@
 //Esconder Juego de la Memoria
-// $('#juego').hide();
+$('#juego').hide();
 
 //Aplicando on.click en el botón '#mostrarMemoClick' para mostrar '#juego'
 $('document').ready(function(){
