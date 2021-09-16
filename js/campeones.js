@@ -46,6 +46,35 @@ $('document').ready(function(){
             fontSize: "25px",
         })
 
+        //MediaQueries
+        const mediaQueries600 = window.matchMedia("(max-width: 600px)");
+
+        function handleTabletChange(e){
+        if (e.matches){
+            $('.campeonesEnImagenes img').css({
+            width: "380px",
+            height: "220px",
+            })
+
+            $('.campeonesEnImagenes h5').css({
+            width: "380px",
+            })
+        }else{
+            $('.campeonesEnImagenes img').css({
+            width: "510px",
+            height: "300px",
+            })
+
+            $('.campeonesEnImagenes h5').css({
+            width: "500px",
+            })
+        };
+        }; 
+
+        mediaQueries600.addListener(handleTabletChange);
+
+        handleTabletChange(mediaQueries600);
+
         $('#mostrarCampeones').hide();
     });
 });

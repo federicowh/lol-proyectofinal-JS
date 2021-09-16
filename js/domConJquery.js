@@ -111,10 +111,10 @@ $('#mapa').prepend(`
     <img src="media/mapa/mapaLol.png">
 `);
 
-//3 Mapas con Video
+//Modos de Juego
 $('#modos').prepend(`
     <div id="modos-titulo">
-    <h4>¡Distintos modos de juego!</h4>
+        <h4>¡Distintos modos de juego!</h4>
     </div>
 
     <div id="modos-contenedor-video">

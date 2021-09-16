@@ -141,7 +141,6 @@ $('#bienvenida-titulo').css({
     display: "flex",
     justifyContent: "center",
     width: "100%",
-    paddingRight: "40px",
     margin: "10px",
     fontSize: "15px",
     textAlign: "center",
@@ -153,6 +152,7 @@ $('#bienvenida-titulo').css({
 //Botones para elegir entre BUSCAR POR ROLES/BUSCAR POR NOMBRE/MEMOLOL
 $('.elegir').css({
     display: "flex",
+    flexFlow: "row wrap",
     justifyContent: "center",
     width: "100%",
     margin: "auto",
@@ -163,6 +163,9 @@ $('.elegir').css({
 });
 
 $('.elegir button').css({
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     fontSize: "18px",
     fontStyle: "italic",
     fontWeight: "bold",
@@ -170,7 +173,7 @@ $('.elegir button').css({
     height: "80px",
     cursor: "pointer",
     margin: "15px",
-    border: "0px",
+    border: "4px solid #EBA272",
     backgroundColor: "white"
 });
 $('.elegir button').hover(function(){
@@ -301,6 +304,7 @@ $('#buscador input').css({
     textAlign: "center",
     width: "400px",
     height: "40px",
+    margin: "10px",
     outline: "none",
     borderRadius: "0px",
 });
@@ -613,7 +617,7 @@ $('#video-apps img').css({
     display: "none",
 });
 
-//Modos Juego:
+//Modos de Juego:
 $('#modos').css({
     display: "flex",
     flexFlow: "column wrap",
@@ -641,15 +645,17 @@ $('#modos-titulo').css({
 
 $('#modos-contenedor-video').css({
     display: "flex",
+    flexFlow: "row wrap",
     justifyContent: "center",
     alignItems: "center",
-    width: "100%"
 });
 
 $('#modos-contenedor-video video').css({
+    display: "flex",
+    flexFlow: "row wrap",
     border: "4px solid #EBA272",
     height: "300px",
-    margin: "20px 0px 10px 50px",
+    margin: "20px 0px 10px 0px",
 });
 
 $('#modos-contenedor-video p').css({
@@ -659,12 +665,13 @@ $('#modos-contenedor-video p').css({
     justifyContent: "center",
     alignItems: "center",
     height: "300px",
-    width: "100%",
-    margin: "20px 50px 10px 0px",
-    padding: "20px",
+    width: "50%",
+    margin: "20px 0px 10px 0px",
+    padding: "0px 15px 0px 15px",
     backgroundColor: "white",
     color: "black",
     fontStyle: "italic",
+    fontSize: "16px",
     fontWeight: "bold",
     letterSpacing: "1px",
 });
@@ -746,11 +753,13 @@ $('.pie-sponsors').css({
     alignItems: "center",
     alignContent: "center",
     width: "100%",
-    height: "200px",
+    height: "100%",
     padding: "20px",
 });
 
 $('.pie-sponsors img').css({
+    width: "100%",
+    margin: "15px",
     transition: "all 0.8s",
 });
 $('.pie-sponsors img').hover(function(){
@@ -787,3 +796,112 @@ $('.pie-sponsors i').hover(function(){
 function(){
     $(this).css('transform', 'scale(1,1)');
 });
+
+//MediaQueries
+const mediaQueries768 = window.matchMedia("(max-width: 768px)");
+
+function handleTabletChange(e){
+    if (e.matches){
+        //Menu
+        $('.menu-contenido i').css({
+            display: "none",
+        });
+
+        //Bienvenida
+        $('.bienvenida-contenido').css({
+            height: "100%",
+        });
+
+        //Botones buscar por
+        $('.elegir button').css({
+            width: "180px",
+        });
+
+        //Modos de Juego:
+        $('#modos-contenedor-video p').css({
+            fontSize: "12.5px"
+        });
+
+        $('#modos-contenedor-video').css({
+            flexFlow: "column wrap",
+        });
+        
+        $('#modos-contenedor-video video').css({
+            margin: "20px 0px 0px 0px",
+        });
+        
+        $('#modos-contenedor-video p').css({
+            width: "300px",
+            margin: "0px 0px 10px 0px",
+        });
+
+        //Apps
+        $('#video-apps img').css({
+            width: "90px",
+            height: "90px",
+        });
+
+        //Pie de Página
+        $('#pie p').css({
+            height: "100%",
+        });
+
+        $('.pie-sponsors').css({
+            flexFlow: "column wrap",
+        });
+
+    }else{
+        //Menu
+        $('.menu-contenido i').css({
+            display: "flex",
+        });
+
+        //Bienvenida
+        $('.bienvenida-contenido').css({
+            height: "90px",
+        });
+
+        //Botones buscar por
+        $('.elegir button').css({
+            width: "30%",
+        });
+
+        //Modos de Juego:
+        $('#modos-contenedor-video p').css({
+            fontSize: "16px",
+        });
+
+        $('#modos-contenedor-video').css({
+            flexFlow: "row wrap",
+        });
+        
+        $('#modos-contenedor-video video').css({
+            margin: "20px 0px 10px 0px",
+        });
+        
+        $('#modos-contenedor-video p').css({
+            width: "50%",
+            margin: "20px 0px 10px 0px",
+        });
+
+        //Apps
+        $('#video-apps img').css({
+            width: "180px",
+            height: "180px",
+            display: "none",
+        });
+
+        //Pie de Página
+        $('#pie p').css({
+            height: "50px",
+        });
+
+        $('.pie-sponsors').css({
+            flexFlow: "row wrap",
+        });
+    };
+};
+
+mediaQueries768.addListener(handleTabletChange);
+
+handleTabletChange(mediaQueries768);
