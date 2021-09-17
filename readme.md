@@ -8,7 +8,7 @@ NOMBRE DEL PROYECTO: LOL (League of Legends)
 
 FINALIDAD DEL PROYECTO: 
 1)BRINDAR INFORMACION DE LOS PERSONAJES DEL JUEGO 
-2)EL USUARIO INTERACTUE CON EL JUEGO ADAPTADO A LA TEMATICA DEL MISMO
+2)EL USUARIO INTERACTUE CON UN JUEGO DE CARTAS ADAPTADO A LA TEMATICA DEL MISMO
 
 - ¿Quienes son sus personajes? (Poder buscarlos por nombres para ver su imágen)
 - ¿Cuales son los roles de cada uno? (Poder buscarlos por roles)
