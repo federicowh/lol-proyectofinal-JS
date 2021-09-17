@@ -310,7 +310,7 @@ $('#buscador input').css({
     height: "40px",
     margin: "10px",
     outline: "none",
-    borderRadius: "0px",
+    borderLeft: "5px solid #EBA272",
 });
 
 $('#mostrarCampeones').css({
@@ -722,6 +722,107 @@ $('.navegador-contenido h4').css({
 $('.navegador-contenido img').css({
     width: "150px",
     height: "150px",
+});
+
+//Caja de Comentarios
+$('#comentarios').css({
+    display: "flex",
+    flexFlow: "column wrap",
+    justifyContent: "center",
+    width: "90%",
+    margin: "auto",
+    marginTop: "30px",
+    boxShadow: "0 0 20px rgba(0, 0, 0, 0.55)",
+});
+
+$('.comentarios-titulo').css({
+    display: "flex",
+    flexFlow: "row wrap",
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+    backgroundColor: "white",
+    color: "black",
+    fontSize: "22px",
+    fontStyle: "italic",
+    height: "80px"
+});
+
+$('.comentarios-contenedor-form').css({
+    display: "flex",
+    flexFlow: "row wrap",
+    justifyContent: "center",
+    alignContent: "center",
+    alignItems: "center",
+    width: "100%",
+    height: "100%",
+    padding: "20px",
+    backgroundColor: "black",
+});
+
+$('#comentarios-form input').css({
+    height: "80px"
+});
+
+$('#comentarios-form input').css({
+    width: "200px",
+});
+
+$('#comentarios-form .comentarios-input').css({
+    textAlign: "left",
+    border: "none",
+    fontWeight: "bold",
+    padding: "10px",
+    marginRight: "20px",
+    width: "400px",
+    height: "50px",
+    borderLeft: "5px solid #EBA272",
+});
+
+$('#comentarios-form .comentarios-btn').css({
+    textAlign: "center",
+    border: "none",
+    width: "150px",
+    height: "50px",
+    fontSize: "15px",
+    fontStyle: "italic",
+    fontWeight: "bold",
+    cursor: "pointer"
+});
+
+$('.comentarios-eliminar').css({
+    display: "flex",
+    flexFlow: "row wrap",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "10px",
+    height: "80px",
+    backgroundColor: "black",
+    color: "white"
+});
+
+$('.eliminar-todo-btn').css({
+    border: "none",
+    width: "150px",
+    height: "50px",
+    fontSize: "15px",
+    fontStyle: "italic",
+    fontWeight: "bold",
+    cursor: "pointer"
+});
+
+$('.comentarios-stream').css({
+    listStyle: "none",
+    backgroundColor: "white",
+    color: "black"
+});
+
+$('.comentarios-creados').css({
+    fontSize: "25px",
+    fontStyle: "italic",
+    margin: "25px",
+    paddingLeft: "15px",
+    borderLeft: "5px solid #EBA272",
 });
 
 //Pie de Página

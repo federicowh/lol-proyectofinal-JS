@@ -161,6 +161,26 @@ $('#video').prepend(`
     </div>
 `);
 
+//Caja de Comentarios
+$('#comentarios').prepend(`
+        <h1 class="comentarios-titulo">Caja de Comentarios</h1>
+
+        <div class="comentarios-contenedor-form">
+            <form id="comentarios-form">
+                <input type="text" id="comentarios-input" class="comentarios-input" placeholder="Dejá tu comentario...">
+                <input type="submit" value="Enviar" id="comentarios-btn" class="comentarios-btn">
+            </form>
+        </div>
+    
+        <ul id="comentarios-stream" class="comentarios-stream">
+            
+        </ul>
+
+        <div class="comentarios-eliminar">
+            <button class="eliminar-todo-btn" id="eliminar-todo" type="button">Eliminar todo</button>
+        </div>
+`);
+
 //Pie de Página
 $('#pie').append(`
     <p>™ & © 2021 Riot Games, Inc. Todos los derechos reservados. Riot Games, League of Legends y PvP.net son marcas comerciales o marcas registradas de Riot Games, Inc.</p>
