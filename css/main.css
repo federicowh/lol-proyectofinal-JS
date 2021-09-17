@@ -19,7 +19,8 @@
   animation: pulsar 1s;
 }
 
-/*KEYFRAME*/
+/*KeyFrames*/
+/*Juego de la Memoria*/
 @keyframes pulsar {
   0% {
     transform: scale(1);
@@ -29,5 +30,16 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+/*Caja de Comentarios*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

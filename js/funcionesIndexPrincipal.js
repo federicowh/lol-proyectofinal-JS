@@ -16,7 +16,7 @@ $('document').ready(function(){
 //Video en Loop Página Principal:
 //Haciendo visible el título con la opacidad
 $('document').ready(function(){
-    $('#video-titulo img').animate({opacity: "1"}, 1000);
+    $('#video-titulo img').animate({opacity: "1"}, 2500);
 });
 
 //Cuando entras con el mouse en el div $('#video') se muestran las plataformas disponibles

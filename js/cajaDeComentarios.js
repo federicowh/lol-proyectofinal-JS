@@ -27,6 +27,7 @@ function agregarLi(enLinea, str, index) {
         margin: "25px",
         paddingLeft: "15px",
         borderLeft: "5px solid #EBA272",
+        animation: "fadeIn 1.5s"
     });
 };
 
@@ -59,9 +60,9 @@ function iniciarAppComentarios() {
     eliminarTodo.addEventListener('click', function() {
         limpiarComentarios(comentariosLista);
     }, true);
-    
-    comentariosFormulario.addEventListener('submit', function (event) {
-        event.preventDefault();
+
+    comentariosFormulario.addEventListener('submit', function (evento) {
+        evento.preventDefault();
         let comentarioStr2 = comentariosInput.value,
         comentarios = obtenerComentarios();
 

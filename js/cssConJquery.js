@@ -733,6 +733,7 @@ $('#comentarios').css({
     margin: "auto",
     marginTop: "30px",
     boxShadow: "0 0 20px rgba(0, 0, 0, 0.55)",
+    userSelect: "none"
 });
 
 $('.comentarios-titulo').css({
@@ -784,8 +785,15 @@ $('#comentarios-form .comentarios-btn').css({
     fontSize: "15px",
     fontStyle: "italic",
     fontWeight: "bold",
-    border: "2px solid black",
-    cursor: "pointer"
+    cursor: "pointer",
+    backgroundColor: "black",
+    color: "white"
+});
+$('#comentarios-form .comentarios-btn').hover(function(){
+    $(this).css({backgroundColor: "#EBA272", transition: "all 0.5s"});
+},
+function(){
+    $(this).css({backgroundColor: "black", transition: "all 0.5s"});
 });
 
 $('.comentarios-eliminar').css({
@@ -808,6 +816,12 @@ $('.eliminar-todo-btn').css({
     fontWeight: "bold",
     cursor: "pointer"
 });
+$('.eliminar-todo-btn').hover(function(){
+    $(this).css({backgroundColor: "#EBA272", transition: "all 0.5s", color: "white"});
+},
+function(){
+    $(this).css({backgroundColor: "white", transition: "all 0.5s", color: "black"});
+});
 
 $('.comentarios-stream').css({
     listStyle: "none",
@@ -821,6 +835,7 @@ $('.comentarios-creados').css({
     margin: "25px",
     paddingLeft: "15px",
     borderLeft: "5px solid #EBA272",
+    animation: "fadeIn 1.5s"
 });
 
 //Pie de Página
