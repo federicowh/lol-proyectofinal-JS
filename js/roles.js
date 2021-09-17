@@ -555,6 +555,6 @@ $('document').ready(function(){
         $('#mostrarCampeones').hide();
         $('#buscador').hide();
         $('#mapa').hide();
-        $('#juego').hide();
+        $('#mostrarJuego').hide();
     })
 });

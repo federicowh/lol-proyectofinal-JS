@@ -72,7 +72,6 @@ $('document').ready(function(){
         }; 
 
         mediaQueries600.addListener(pantalla600);
-
         pantalla600(mediaQueries600);
 
         $('#mostrarCampeones').hide();
@@ -92,7 +91,7 @@ $('document').ready(function(){
         $('.apoyos').hide();
         $('.tanques').hide();
         $('#mapa').hide();
-        $('#juego').hide();
+        $('#mostrarJuego').hide();
     })
 });
 

@@ -36,7 +36,7 @@ $('#bienvenida').prepend(`
     <div class="elegir">
         <button id="mostrarRolesClick">BUSCAR POR ROLES</button>
         <button id="mostrarCampeonesClick">BUSCAR POR NOMBRES</button>
-        <button id="mostrarMemoClick">MEMOLOL</button>
+        <button id="mostrarJuegoClick">MEMOLOL</button>
     </div>
 
     <div class="roles">
@@ -58,7 +58,7 @@ $('#bienvenida').prepend(`
 `);
 
 //Juego de la memoria
-$('#juego').prepend(`
+$('#mostrarJuego').prepend(`
     <div class="juego-contenedor">
         <h1 id="juego-titulo">¡Memo Lol!</h1>
 
@@ -84,7 +84,7 @@ $('#juego').prepend(`
 </div>
 `)
 
-//Modal del juego
+//Modal del juego de la memoria
 $('#modal-contenedor').prepend(`
         <div id="modal" class="modal">
             <div class="modal-contentido">

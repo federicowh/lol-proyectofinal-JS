@@ -1,10 +1,10 @@
 //Esconder Juego de la Memoria
-$('#juego').hide();
+$('#mostrarJuego').hide();
 
 //Aplicando on.click en el botón '#mostrarMemoClick' para mostrar '#juego'
 $('document').ready(function(){
-  $('#mostrarMemoClick').on('click', function(){
-      $('#juego').fadeToggle(300);
+  $('#mostrarJuegoClick').on('click', function(){
+      $('#mostrarJuego').fadeToggle(300);
       $('.roles').hide();
       $('.luchadores').hide();
       $('.magos').hide();
