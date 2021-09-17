@@ -1,3 +1,4 @@
+//Caja de Comentarios
 function soporteLocalStorage () {
     return typeof localStorage !== 'undefined';
 };
