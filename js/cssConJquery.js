@@ -177,7 +177,8 @@ $('.elegir button').css({
     height: "80px",
     cursor: "pointer",
     margin: "15px",
-    border: "4px solid #EBA272",
+    border: "4px solid black",
+    borderRadius: "15px",
     backgroundColor: "white"
 });
 $('.elegir button').hover(function(){
