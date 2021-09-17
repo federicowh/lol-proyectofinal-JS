@@ -15,6 +15,8 @@ FINALIDAD DEL PROYECTO:
 - Imagenes y videos del videojuego.
 - Creación de un juego de "cartas" con temática al juego.
 
+PÁGINA UTILIZADA PARA CORROBORAR SU FUNCIONAMIENTO -- > GOOGLE CHROME - WINDOWS 10
+
 EDITOR DE CODIGO UTILIZADO: VISUAL STUDIO CODE.
 
 GITHUB PAGES: https://federicowh.github.io/lol-proyectofinal-JS/
