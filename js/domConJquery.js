@@ -165,13 +165,12 @@ $('#video').prepend(`
 $('#comentarios').prepend(`
         <h1 class="comentarios-titulo">Caja de Comentarios</h1>
 
-        <div class="comentarios-contenedor-form">
-            <form id="comentarios-form">
-                <input type="text" id="comentarios-input" class="comentarios-input" placeholder="Dejá tu comentario...">
-                <input type="submit" value="Enviar" id="comentarios-btn" class="comentarios-btn">
-            </form>
-        </div>
-    
+
+        <form id="comentarios-form">
+            <input type="text" id="comentarios-input" class="comentarios-input" placeholder="Dejá tu comentario...">
+            <input type="submit" value="Enviar" id="comentarios-btn" class="comentarios-btn">
+        </form>
+
         <ul id="comentarios-stream" class="comentarios-stream">
             
         </ul>
